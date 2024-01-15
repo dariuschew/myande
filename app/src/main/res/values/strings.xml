@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">my ande</string>
+    <string name="login_title">Login here</string>
+    <string name="welcome_message">Welcome back you\'ve been missed!</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_new_account">Create new account</string>
+
+    <string name="underlined_text"><![CDATA[<u>Reciepes</u>]]></string>
+    <string name="edit_profile">Edit Profile</string>
+
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvMyProfile"
+        android:layout_width="112dp"
+        android:layout_height="57dp"
+        android:text="My profile"
+        android:textAppearance="@style/TextAppearance.MyApp.Headline6"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_below="@id/tvMyProfile"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/bg_round"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_profile_pic" />
+
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivProfile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-83dp"
+        android:layout_marginEnd="42dp"
+        android:background="@drawable/button_edit_profile"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        android:textColor="@color/button_red"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="204dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="458dp"
+        android:text="Troyan Smith"
+        android:textAppearance="@style/TextAppearance.MyApp.Headline6"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvProfileDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="264dp"
+        android:text="Hello world I’m Troyan Smith, the winner of Master Chef Season 9!"
+        android:textAppearance="@style/TextAppearance.MyApp.Body" />
+
+    <LinearLayout
+        android:id="@+id/llStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvProfileDescription"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- Recipes Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRecipesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipes"
+                android:textAppearance="@style/StatsLabelStyle" />
+
+            <TextView
+                android:id="@+id/tvRecipesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textAppearance="@style/StatsCountStyle"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFollowersLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:textAppearance="@style/StatsLabelStyle" />
+
+            <TextView
+                android:id="@+id/tvFollowersCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="43"
+                android:textAppearance="@style/StatsCountStyle"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFollowingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:textAppearance="@style/StatsLabelStyle" />
+
+            <TextView
+                android:id="@+id/tvFollowingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textAppearance="@style/StatsCountStyle"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRecipesListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llStats"
+        android:layout_marginTop="59dp"
+        android:text="@string/underlined_text"
+        android:textAppearance="@style/TextAppearance.MyApp.Headline6"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="400dp"
+        android:background="@android:color/black" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRecipesListTitle"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/profile_recipe_card_item" />
+
+
+</RelativeLayout>

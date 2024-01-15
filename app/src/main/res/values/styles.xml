@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Text styles -->
+    <style name="TextAppearance.MyApp.Headline6" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">@dimen/text_size_headline6</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Subtitle1" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">@dimen/text_size_subtitle1</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Body" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/text_size_body</item>
+    </style>
+
+
+    <!-- Style for the stat labels (e.g., 'Recipes', 'Followers', 'Following') -->
+    <style name="StatsLabelStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <!-- You can add more items like font family, style, etc. -->
+    </style>
+
+    <!-- Style for the stat numbers -->
+    <style name="StatsCountStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <!-- You can add more items like font weight, etc. -->
+    </style>
+
+    <style name="ProfileImageEditText" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/button_red</item>
+        <!-- Add other style properties like font size, padding etc. -->
+    </style>
+
+</resources>

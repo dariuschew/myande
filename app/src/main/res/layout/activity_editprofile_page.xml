@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/ic_back_button" />
+
+        <!-- Edit Profile Text -->
+
+        <TextView
+            android:id="@+id/edit_profile_text"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="198dp"
+            android:layout_toEndOf="@+id/back_button"
+            android:text="@string/edit_profile"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="146dp"
+            android:layout_height="143dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="524dp"
+            android:src="@drawable/default_profile_pic" />
+
+        <ImageView
+            android:id="@+id/camera_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/profile_image"
+            android:layout_alignBottom="@id/profile_image"
+            android:padding="2dp"
+
+            android:src="@drawable/ic_camera" />
+
+        <LinearLayout
+            android:id="@+id/llProfileForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/camera_icon"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Name Field -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="Name"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="Troyan Smith"
+                android:padding="12dp" />
+
+            <!-- Email Field -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:text="Email"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="tryan_smith222@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="12dp" />
+
+            <!-- Password Field -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:text="Password"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="************"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+
+            <!-- Description Field -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:text="Description"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="Hello world I’m Troyan Smith, the winner of Master Chef Season 9!"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:minLines="4"
+                android:padding="12dp"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+        <!-- Button Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llProfileForm"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Discard Changes Button -->
+            <Button
+                android:id="@+id/btnDiscard"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_button_background"
+                android:text="Discard changes"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginEnd="4dp"/>
+
+            <!-- Save Changes Button -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/red_button_background"
+                android:text="Save changes"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginStart="4dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

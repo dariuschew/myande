@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_headline6">22sp</dimen>
+    <dimen name="text_size_subtitle1">18sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+
+    <!-- dimens.xml -->
+    <dimen name="active_dot_width">12dp</dimen>
+    <dimen name="active_dot_height">12dp</dimen>
+    <dimen name="inactive_dot_width">8dp</dimen>
+    <dimen name="inactive_dot_height">8dp</dimen>
+
+</resources>
