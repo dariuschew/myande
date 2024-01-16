@@ -50,6 +50,11 @@
             android:name=".activities.ViewRecipeActivity"
             android:label=""
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".activities.AllCommentsActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

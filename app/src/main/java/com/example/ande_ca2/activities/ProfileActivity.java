@@ -74,7 +74,7 @@ public class ProfileActivity extends AppCompatActivity {
                 "30 mins",
                 4,
                 "Italy",
-              Arrays.asList(
+                Arrays.asList(
                         new Ingredient("Olive oil", "https://media.nedigital.sg/fairprice/fpol/media/images/product/XL/11449276_XL1_20210825.jpg"),
                         new Ingredient("Onion", "https://www.shutterstock.com/image-photo/red-whole-sliced-onion-isolated-260nw-1684863088.jpg"),
                         new Ingredient("Carrots", "https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2021/04/23175719/shutterstock_440493100-1.jpg"),
@@ -84,10 +84,33 @@ public class ProfileActivity extends AppCompatActivity {
                         new Ingredient("Basil leaves", "https://m.media-amazon.com/images/I/51W8xfdp-iL._AC_UF1000,1000_QL80_.jpg"),
                         new Ingredient("Sugar", "https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2022/04/sugar-g963832288_1280.jpg"),
                         new Ingredient("Kosher salt", "https://www.eatingwell.com/thmb/QQYn36IO-f9sDHIaf-s0xuIFS40=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-kosher-salt-2000-7f0f88e664bb45db9836066b047cceed.jpg"))
-,
+                ,
                 Arrays.asList(
-                        new Instruction("url_to_instruction1_image1", "Boil water and add salt."),
-                        new Instruction("url_to_instruction1_image2", "Cook spaghetti for 10 minutes.")
+                        new Instruction("Boil water in a large pot.", Arrays.asList(
+                                "https://www.seriouseats.com/thmb/7lo_xXS8AYRZoM6u46qthnqxlWQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/boliingwater-Amandasuarez-hero-15c969283eec4a34b7a38874cfc85f45.jpg",
+                                "https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2021-08/Salt%20in%20baking%202.jpeg?itok=knozvPyj",
+                                "https://www.mashed.com/img/gallery/why-its-a-mistake-to-break-long-pasta-before-putting-it-in-a-pot/intro-1672856363.jpg"
+                        )),
+                        new Instruction("Cook the spaghetti until al dente.", Arrays.asList(
+                                "https://www.thechunkychef.com/wp-content/uploads/2019/09/One-Pot-Spaghetti-feat.jpg",
+                                "https://example.com/images/stirring-pasta.jpg",
+                                "https://example.com/images/tasting-pasta.jpg"
+                        )),
+                        new Instruction("Drain the pasta and set aside.", Arrays.asList(
+                                "https://example.com/images/draining-pasta.jpg",
+                                "https://example.com/images/shaking-colander.jpg",
+                                "https://example.com/images/pasta-finished-draining.jpg"
+                        )),
+                        new Instruction("Prepare the tomato sauce by sautéing onions and garlic.", Arrays.asList(
+                                "https://example.com/images/sauteing-onions.jpg",
+                                "https://example.com/images/adding-garlic.jpg",
+                                "https://example.com/images/adding-tomatoes.jpg"
+                        )),
+                        new Instruction("Combine pasta with tomato sauce and serve.", Arrays.asList(
+                                "https://example.com/images/mixing-pasta-sauce.jpg",
+                                "https://example.com/images/garnishing-with-basil.jpg",
+                                "https://example.com/images/serving-pasta.jpg"
+                        ))
                 ),
                 Arrays.asList(
                         new Comment("Delicious recipe!", "Jane Doe", "url_to_profile1_image", 10, new Date()),
@@ -116,8 +139,31 @@ public class ProfileActivity extends AppCompatActivity {
                         new Ingredient("Sugar", "https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2022/04/sugar-g963832288_1280.jpg"),
                         new Ingredient("Kosher salt", "https://www.eatingwell.com/thmb/QQYn36IO-f9sDHIaf-s0xuIFS40=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-kosher-salt-2000-7f0f88e664bb45db9836066b047cceed.jpg")),
                 Arrays.asList(
-                        new Instruction("url_to_instruction2_image1", "Prepare the pizza base and add toppings."),
-                        new Instruction("url_to_instruction2_image2", "Bake in the oven for 30 minutes.")
+                        new Instruction("Boil water in a large pot.", Arrays.asList(
+                                "https://www.seriouseats.com/thmb/7lo_xXS8AYRZoM6u46qthnqxlWQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/boliingwater-Amandasuarez-hero-15c969283eec4a34b7a38874cfc85f45.jpg",
+                                "https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2021-08/Salt%20in%20baking%202.jpeg?itok=knozvPyj",
+                                "https://www.mashed.com/img/gallery/why-its-a-mistake-to-break-long-pasta-before-putting-it-in-a-pot/intro-1672856363.jpg"
+                        )),
+                        new Instruction("Cook the spaghetti until al dente.", Arrays.asList(
+                                "https://www.thechunkychef.com/wp-content/uploads/2019/09/One-Pot-Spaghetti-feat.jpg",
+                                "https://example.com/images/stirring-pasta.jpg",
+                                "https://example.com/images/tasting-pasta.jpg"
+                        )),
+                        new Instruction("Drain the pasta and set aside.", Arrays.asList(
+                                "https://example.com/images/draining-pasta.jpg",
+                                "https://example.com/images/shaking-colander.jpg",
+                                "https://example.com/images/pasta-finished-draining.jpg"
+                        )),
+                        new Instruction("Prepare the tomato sauce by sautéing onions and garlic.", Arrays.asList(
+                                "https://example.com/images/sauteing-onions.jpg",
+                                "https://example.com/images/adding-garlic.jpg",
+                                "https://example.com/images/adding-tomatoes.jpg"
+                        )),
+                        new Instruction("Combine pasta with tomato sauce and serve.", Arrays.asList(
+                                "https://example.com/images/mixing-pasta-sauce.jpg",
+                                "https://example.com/images/garnishing-with-basil.jpg",
+                                "https://example.com/images/serving-pasta.jpg"
+                        ))
                 ),
                 Arrays.asList(
                         new Comment("Loved this pizza recipe!", "Sam Lee", "url_to_profile2_image", 8, new Date()),
@@ -146,8 +192,31 @@ public class ProfileActivity extends AppCompatActivity {
                         new Ingredient("Sugar", "https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2022/04/sugar-g963832288_1280.jpg"),
                         new Ingredient("Kosher salt", "https://www.eatingwell.com/thmb/QQYn36IO-f9sDHIaf-s0xuIFS40=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-kosher-salt-2000-7f0f88e664bb45db9836066b047cceed.jpg")),
                 Arrays.asList(
-                        new Instruction("url_to_instruction3_image1", "Grill the beef patty."),
-                        new Instruction("url_to_instruction3_image2", "Assemble the burger with all toppings.")
+                        new Instruction("Boil water in a large pot.", Arrays.asList(
+                                "https://www.seriouseats.com/thmb/7lo_xXS8AYRZoM6u46qthnqxlWQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/boliingwater-Amandasuarez-hero-15c969283eec4a34b7a38874cfc85f45.jpg",
+                                "https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2021-08/Salt%20in%20baking%202.jpeg?itok=knozvPyj",
+                                "https://www.mashed.com/img/gallery/why-its-a-mistake-to-break-long-pasta-before-putting-it-in-a-pot/intro-1672856363.jpg"
+                        )),
+                        new Instruction("Cook the spaghetti until al dente.", Arrays.asList(
+                                "https://www.thechunkychef.com/wp-content/uploads/2019/09/One-Pot-Spaghetti-feat.jpg",
+                                "https://example.com/images/stirring-pasta.jpg",
+                                "https://example.com/images/tasting-pasta.jpg"
+                        )),
+                        new Instruction("Drain the pasta and set aside.", Arrays.asList(
+                                "https://example.com/images/draining-pasta.jpg",
+                                "https://example.com/images/shaking-colander.jpg",
+                                "https://example.com/images/pasta-finished-draining.jpg"
+                        )),
+                        new Instruction("Prepare the tomato sauce by sautéing onions and garlic.", Arrays.asList(
+                                "https://example.com/images/sauteing-onions.jpg",
+                                "https://example.com/images/adding-garlic.jpg",
+                                "https://example.com/images/adding-tomatoes.jpg"
+                        )),
+                        new Instruction("Combine pasta with tomato sauce and serve.", Arrays.asList(
+                                "https://example.com/images/mixing-pasta-sauce.jpg",
+                                "https://example.com/images/garnishing-with-basil.jpg",
+                                "https://example.com/images/serving-pasta.jpg"
+                        ))
                 ),
                 Arrays.asList(
                         new Comment("This is the best burger recipe!", "Gary Stewart", "url_to_profile3_image", 12, new Date()),
